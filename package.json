@@ -1,5 +1,5 @@
 {
-  "name": "paincmds",
+  "name": "@painxd/paincmds",
   "version": "3.0.0",
   "description": "A cool package and it does cool things!",
   "main": "./src/index.js",
@@ -8,5 +8,19 @@
   "dependencies": {
     "discord.js": "^12.5.1",
     "fs": "0.0.1-security"
-  }
+  },
+  "devDependencies": {},
+  "scripts": {
+  },
+  "bin": {
+    "test": "bin/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkfire126/painHelping.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Darkfire126/painHelping/issues"
+  },
+  "homepage": "https://github.com/Darkfire126/painHelping#readme"
 }
