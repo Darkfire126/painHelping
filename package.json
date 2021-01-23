@@ -1,8 +1,8 @@
 {
-  "name": "painhelping",
+  "name": "paincmds",
   "version": "3.0.0",
   "description": "A cool package and it does cool things!",
-  "main": "index.js",
+  "main": "./src/index.js",
   "author": "painxdxd",
   "license": "MIT",
   "dependencies": {
