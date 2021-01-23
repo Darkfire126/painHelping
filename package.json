@@ -1,6 +1,6 @@
 {
   "name": "paincmds",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "A cool package and it does cool things!",
   "main": "./src/index.js",
   "author": "painxdxd",
