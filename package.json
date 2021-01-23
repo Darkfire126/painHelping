@@ -7,13 +7,12 @@
   "license": "MIT",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "fs": "0.0.1-security"
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7"
   },
   "devDependencies": {},
   "scripts": {},
-  "bin": {
-    "test": "bin/test.js"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Darkfire126/painHelping.git"
