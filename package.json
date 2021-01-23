@@ -1,0 +1,12 @@
+{
+  "name": "painhelping",
+  "version": "3.0.0",
+  "description": "A cool package and it does cool things!",
+  "main": "index.js",
+  "author": "painxdxd",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "fs": "0.0.1-security"
+  }
+}
