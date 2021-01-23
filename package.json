@@ -1,6 +1,6 @@
 {
   "name": "@painxd/paincmds",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A cool package and it does cool things!",
   "main": "./src/index.js",
   "author": "painxdxd",
@@ -10,8 +10,7 @@
     "fs": "0.0.1-security"
   },
   "devDependencies": {},
-  "scripts": {
-  },
+  "scripts": {},
   "bin": {
     "test": "bin/test.js"
   },
