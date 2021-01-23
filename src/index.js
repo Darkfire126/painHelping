@@ -1,41 +1,26 @@
+const add = (num1,num2) => {
+    if(!num1) return console.warn("No num1 EXAMPLE console.log(add(1,2)) OUTPUT: 3")
+    if(!num2) return console.warn("No num1 EXAMPLE console.log(add(1,2)) OUTPUT: 3")
+    return +num1 + +num2
+}
+module.exports.add
+const subtract = (num3,num4) => {
+    if(!num3) return console.warn("No num1 for subtract! EXAMPLE: console.log(subtract(4,3)) OUTPUT: 1")
+    if(!num4) return console.warn("No num2 for subtract! EXAMPLE: console.log(subtract(4,3)) OUTPUT: 1")
+return -num3 + -num4
+}
+module.exports.subtract
 
-const Discord = require("discord.js")
-require('dotenv').config()
-const client = new Discord.Client()
-const token = process.env.TOKEN
-const prefix = process.env.PREFIX
-if(!token) return TypeError("Please make a .env file and put TOKEN=<insert your token>")
-if(!prefix) return TypeError("Please make a .env file and put PREFIX=<insert your prefix>")
-client.commands = new Discord.Collection()
-client.aliases = new Discord.Collection()
-const fs = require("fs")
-fs.readdir("./commands", (err, files) => {
-
-    if(err) console.log(err)
-
-    let jsfile = files.filter(f => f.split(".").pop() === "js") 
-    if(jsfile.length <= 0) {
-         return console.log("[CMDS] Couldn't Find Commands!");
-    }
-
-    jsfile.forEach((f, i) => {
-        let pull = require(`./commands/${f}`);
-        client.commands.set(pull.config.name, pull);  
-        pull.config.aliases.forEach(alias => {
-            client.aliases.set(alias, pull.config.name)
-        });
-    });
-});
-
-client.on("message", async message => {
-    if(message.author.bot || message.channel.type === "dm") return;
-
-    let messageArray = message.content.split(" ");
-    let cmd = messageArray[0];
-    let args = messageArray.slice(1);
-
-    if(!message.content.startsWith(prefix)) return;
-    let commandfile = client.commands.get(cmd.slice(prefix.length)) || client.commands.get(client.aliases.get(cmd.slice(prefix.length)))
-    if(commandfile) commandfile.run(client,message,args)
-
-})
+const multiple = (num5,num6) => {
+    if(!num5) return console.warn("No num1 for multiple! EXAMPLE: console.log(multiple(1,2)) OUTPUT: 2")
+    if(!num6) return console.warn("No num2 for multiple! EXAMPLE: console.log(multiple(2,1)) OUTPUT: 2")
+    return num5 * num6;
+}
+module.exports.multiple
+const divide = (num7,num8) => {
+    if(!num7) return console.warn("No num1 for divide! EXAMPLE: console.log(multiple(10,2)) OUTPUT: 5")
+    if(!num8) return console.warn("No num2 for divide! EXAMPLE: console.log(multiple(10,2)) OUTPUT: 5")
+    return num7 / num8
+}
+module.exports.divide
+console.log(divide(10,2))
