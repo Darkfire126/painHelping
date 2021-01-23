@@ -1,5 +1,5 @@
 {
-  "name": "@painxd/paincmds",
+  "name": "paincmds",
   "version": "3.0.1",
   "description": "A cool package and it does cool things!",
   "main": "./src/index.js",
